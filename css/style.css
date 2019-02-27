@@ -1,0 +1,77 @@
+ /* Remove the navbar's default rounded borders and increase the bottom margin */
+ html {
+     position: relative;
+     min-height: 100%;
+ }
+ body {
+     /* Margin bottom by footer height */
+     margin-bottom: 60px;
+ }
+
+ .navbar-custom {
+     background-color: #1f9fce;
+     color: #ffffff;
+     border-radius:0;
+     border: none;
+ }
+ .navbar-custom .navbar-nav > li > a {
+     color:#fff;
+ }
+
+ .navbar-custom .navbar-nav > .active > a {
+     color: #ffffff;
+     background-color:transparent;
+ }
+
+ .navbar-custom .navbar-nav > li > a:hover,
+ .navbar-custom .navbar-nav > li > a:focus,
+ .navbar-custom .navbar-nav > .active > a:hover,
+ .navbar-custom .navbar-nav > .active > a:focus,
+ .navbar-custom .navbar-nav > .open >a {
+     text-decoration: none;
+     background-color: #ffffff;
+     color: #1f9fce;
+ }
+
+ .navbar-custom .navbar-brand {
+     color:#eeeeee;
+ }
+ .navbar-custom .navbar-toggle {
+     background-color:#eeeeee;
+ }
+ .navbar-custom .icon-bar {
+     background-color:#ffffff;
+ }
+
+/* Remove the jumbotron's default bottom margin */
+.jumbotron {
+    margin-bottom: 0 !important;
+    background-color: white;
+}
+
+.panel, .panel-heading, .panel-body, .panel-footer {
+    border: #0b2e13;
+    -webkit-box-shadow: none;
+    background: none;
+}
+.panel-default .panel-heading{
+    font-weight: bold;
+    background: none;
+}
+
+.panel-button {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.btn-primary {
+    border-radius: 0;
+    background-color: #1f9fce;
+    border: none;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
