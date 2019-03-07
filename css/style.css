@@ -5,8 +5,8 @@
  }
  body {
      /* Margin bottom by footer height */
-     margin-bottom: 60px;
-		height: 100%;
+     /* margin-bottom: 120px; */
+	height: 100%;
  }
 
  .navbar-custom {
@@ -48,6 +48,13 @@
 .jumbotron {
     margin-bottom: 0 !important;
     background-color: white;
+
+    padding: 10px 0px 10px 0px;
+    color: #1f9fce;
+}
+.jumbotron h1{
+    font-weight: bold;
+
 }
 
 .panel, .panel-heading, .panel-body, .panel-footer {
@@ -64,6 +71,10 @@
     margin-top: 10px;
     margin-left: 12px;
 }
+/* Set for maximum of three lines of text */
+/* .panel-footer{
+    min-height: 80px;
+} */
 
 .btn-primary {
     border-radius: 0;
@@ -84,5 +95,49 @@ footer {
 	width: 100%;
 	position: absolute;
     background-color: #f2f2f2;
-    padding: 25px;
+    /* padding: 25px; */
+
+    /* position: absolute;
+    bottom: 0;
+    /* Set the fixed height of the footer here */
+    /* height: 120px; */
+}
+
+
+
+
+ /* Small Devices, Landscape Phones and Phablets, Portrait Tablets, Small Desktops */
+ @media only screen and (min-width : 768px) {
+
+    .row-flex, .row-flex > div[class*='col-'] {  
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex:1 1 auto;
+    }
+    
+    .row-flex-wrap {
+        -webkit-flex-flow: row wrap;
+        align-content: flex-start;
+        flex:0;
+    }
+    
+    .row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+         margin:-.2px; /* hack adjust for wrapping */
+    }
+    
+    .flex-col {
+        display: flex;
+        display: -webkit-flex;
+        flex: 1 100%;
+        flex-flow: column nowrap;
+    }
+    
+    .flex-grow {
+        display: flex;
+        -webkit-flex: 2;
+        flex: 2;
+    }
 }
