@@ -72,39 +72,6 @@
 }
 
 
-.layer3 {
-	font-family: Verdana, Geneva, sans-serif;
-	 font-size: 12pt;
-	 line-height:2.2em
-}
-
-h1.layer3{
-	
-	margin-left: 2%;
-	margin-right; 20%;
-}
-p.layer3{
-		margin-left: 18%;
-		margin-right: 59%;
-	margin-bottom: 0;
-
-}
-
-
-img.layer3{
-		float: left;
-	margin-left: 2%;
-
-}
-
-div.absolute {
-  position: absolute;
-  top: 358px;
-  right: 0;
-  width: 400px;
-  height: 100px;
-}
-
 #download {
 	background: #1f9fce;
 	color: white;
