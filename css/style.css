@@ -57,6 +57,13 @@
     font-weight: bold;
 
 }
+/* No style on How to Complain */
+.jumbotron a {
+    text-decoration: none;
+}
+:hover .jumbotron a {
+    color:#337ab7;
+}
 
 .panel, .panel-heading, .panel-body, .panel-footer {
     border: #0b2e13;
