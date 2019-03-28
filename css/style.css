@@ -155,3 +155,34 @@ footer {
         flex: 2;
     }
 }
+
+/* Increase the font size widget */
+.fontSize-container {
+    position: absolute;
+    left: calc(100% - 135px);
+    top: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fontSize-btn {
+        background-color: #d9534f;
+        border-color: #d43f3a;
+        font-weight: 900;
+        border: 1px solid transparent;
+        color: white;
+        margin: 2px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height:25px;
+}
+
+.up {
+    font-size: 28px;
+}
+.down {
+    font-size: 18px;
+}
