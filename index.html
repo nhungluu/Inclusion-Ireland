@@ -9,6 +9,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css" >
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/favicon.png" >
+
+    <script>
+        /* Increase the font size widget */
+        $(function() {
+            $('.up').on('click', function () {
+                $('body').animate({'font-size': '+=2'});
+            });
+
+            $('.down').on('click', function () {
+                $('body').animate({'font-size': '-=2'});
+            });
+            $('.invert').on('click', function () {
+                $('body, footer, .jumbotron').css('background-color', '#0c0c0c');
+                $('body, footer, .jumbotron').css('color', '#f7f7f7');
+                $('.panel-body').css('border-style', 'none');
+                
+            });
+        });
+    </script>
+
 </head>
 <body>
 
@@ -135,6 +156,13 @@
         </div>
     </div>
 </div><br><br>
+
+<!-- Widget -->
+<div class="fontSize-container">
+    <button class="up fontSize-btn">A</button></br>
+    <button class="down fontSize-btn">A</button>
+    <button class="invert fontSize-btn">#</button>
+</div>
 
 <footer class="container-fluid text-center">
     <br>
