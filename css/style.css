@@ -21,7 +21,9 @@
  .navbar-custom .navbar-nav > li > a {
      color:#fff;
  }
-
+ ul.nav li.dropdown:hover ul.dropdown-menu {
+     display: block;
+ }
  .navbar-custom .navbar-nav > .active > a {
      color: #ffffff;
      background-color:transparent;
@@ -115,7 +117,6 @@ footer {
     /* Set the fixed height of the footer here */
     /* height: 120px; */
 }
-
 
 
 
