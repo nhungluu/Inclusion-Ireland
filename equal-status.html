@@ -11,6 +11,41 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="img/favicon.png" >
 
+    <script>
+        /* Increase the font size widget */
+        $(function() {
+            $('.up').on('click', function () {
+                $('body').animate({'font-size': '+=2'});
+            });
+
+            $('.down').on('click', function () {
+                $('body').animate({'font-size': '-=2'});
+            });
+
+            function darkMode() {
+                $('body, .jumbotron').css('background-color', '#0c0c0c');
+                $('footer').css('background-color', '#232323');
+                $('body, footer, .jumbotron, .panel-heading').css('color', '#f7f7f7');
+                $('.panel-body').css('border-style', 'none');
+                $('.invert').empty().html('&#x263C');
+
+                $(this).one("click", whiteMode);
+            }
+
+            function whiteMode() {
+                $('body, .jumbotron').css('background-color', '#f7f7f7');
+                $('footer').css('background-color', '#f2f2f2');
+                $('body, footer, .jumbotron, .panel-heading').css('color', '#333');
+                $('.panel-body').css('border-style', 'solid');
+                $('.invert').empty().html('&#127765');
+                $(this).one("click", darkMode);
+            }
+            
+            $(".invert").one("click", darkMode);
+
+        });
+    </script>
+
 </head>
 <body>
 
@@ -116,6 +151,13 @@
 
 
 </br></br>
+
+<!-- Widget -->
+<div class="fontSize-container">
+    <button class="up fontSize-btn">A</button><br>
+    <button class="down fontSize-btn">A</button>
+    <button class="invert fontSize-btn">&#127765</button>
+</div>
 
 <footer class="container-fluid text-center">
         <br>

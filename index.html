@@ -21,12 +21,28 @@
             $('.down').on('click', function () {
                 $('body').animate({'font-size': '-=2'});
             });
-            $('.invert').on('click', function () {
-                $('body, footer, .jumbotron').css('background-color', '#0c0c0c');
-                $('body, footer, .jumbotron').css('color', '#f7f7f7');
+
+            function darkMode() {
+                $('body, .jumbotron').css('background-color', '#0c0c0c');
+                $('footer').css('background-color', '#232323');
+                $('body, footer, .jumbotron, .panel-heading').css('color', '#f7f7f7');
                 $('.panel-body').css('border-style', 'none');
-                
-            });
+                $('.invert').empty().html('&#x263C');
+
+                $(this).one("click", whiteMode);
+            }
+
+            function whiteMode() {
+                $('body, .jumbotron').css('background-color', '#f7f7f7');
+                $('footer').css('background-color', '#f2f2f2');
+                $('body, footer, .jumbotron, .panel-heading').css('color', '#333');
+                $('.panel-body').css('border-style', 'solid');
+                $('.invert').empty().html('&#127765');
+                $(this).one("click", darkMode);
+            }
+            
+            $(".invert").one("click", darkMode);
+
         });
     </script>
 
@@ -167,7 +183,7 @@
 <div class="fontSize-container">
     <button class="up fontSize-btn">A</button><br>
     <button class="down fontSize-btn">A</button>
-    <button class="invert fontSize-btn">#</button>
+    <button class="invert fontSize-btn">&#127765</button>
 </div>
 
 <footer class="container-fluid text-center">
