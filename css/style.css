@@ -118,6 +118,12 @@ footer {
     /* height: 120px; */
 }
 
+.secondLayerFooter {
+    bottom: 0;
+    /* Set the fixed height of the footer here */
+    height: 120px;
+}
+
 @media (max-width: 1200px) {
     .navbar-header {
         float: none;
